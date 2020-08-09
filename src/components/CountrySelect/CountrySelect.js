@@ -26,13 +26,15 @@ export default function CountrySelect() {
 
   if (countries === null) return null;
   return (
-    <FormControl className="country_selector">
-      <NativeSelect defaultValue={'global'} onChange={handleCountryChange}>
-        <option value={'global'}>Global</option>
-        {countries.map((country) => (
-          <option value={country.value}>{country.name}</option>
-        ))}
-      </NativeSelect>
-    </FormControl>
+    <div style={{ marginTop: '2rem' }}>
+      <FormControl className="country_selector">
+        <NativeSelect defaultValue={'global'} onChange={handleCountryChange}>
+          <option value={'global'}>Global</option>
+          {countries.map((country) => (
+            <option value={country.value}>{country.name}</option>
+          ))}
+        </NativeSelect>
+      </FormControl>
+    </div>
   );
 }

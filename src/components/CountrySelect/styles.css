@@ -1,4 +1,5 @@
-.country_selector {
-  color: white !important;
-  background-color: black !important;
+.MuiNativeSelect-select {
+  background-color: #535052 !important;
+
+  font-size: 1.2rem !important;
 }
